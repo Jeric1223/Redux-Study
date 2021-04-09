@@ -2,7 +2,7 @@ import React from "react";
 
 function Counter({ number, diff, onIncrease, onDecrease, onSetDiff }) {
   const onChange = (e) => {
-    //e.target.value의 타입은 문자열이기 때문에 숫자로 변환 해주어야 한다.
+    //e.target.value의 타입은 문자열이기 때문에 숫자로 변환 해주어야 한다..
     onSetDiff(parseInt(e.target.value, 10));
   };
   return (
