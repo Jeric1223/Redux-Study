@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { increase, decrease } from "../modules/counter";
 
 function CounterContainer() {
-  const number = useSelector((state) => state.Counter);
+  const number = useSelector((state) => state.counter);
   const dispatch = useDispatch();
 
   const onIncrease = () => {
