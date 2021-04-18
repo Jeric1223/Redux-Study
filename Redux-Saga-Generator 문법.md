@@ -106,3 +106,5 @@ function* watchGenerator() {
 ![img](https://i.imgur.com/DHHeDXA.gif)
 
 redux-saga에서는 이러한 원리로 액션을 모니터링하고, 특정 액션이 발생했을때 우리가 원하는 자바스크립트 코드를 실행시켜준답니다.
+
+출처 : https://react.vlpt.us/
