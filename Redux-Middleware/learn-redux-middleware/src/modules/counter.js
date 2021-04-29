@@ -6,6 +6,15 @@ const DECREASE = "DECREASE";
 export const increase = () => ({ type: INCREASE });
 export const decrease = () => ({ type: DECREASE });
 
+//redux-thunk
+//getState를 쓰지 않는다면 굳이 파라미터로 받아올 필요 없습니다.
+export const increaseAsync = () => (dispatch) => {
+  setTimeout(() => dispatch(increase()), 1000);
+};
+export const decreaseAsync = () => (dispatch) => {
+  setTimeout(() => dispatch(decrease()), 1000);
+};
+
 // 초깃값 (상태가 객체가 아니라 그냥 숫자여도 상관 없습니다.)
 const initialState = 0;
 
